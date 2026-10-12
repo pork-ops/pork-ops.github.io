@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-label="Sample deploy flow diagram">
+  <rect x="1" y="1" width="718" height="218" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="360" y="34" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#24292f">pork-ops sample: markdown -&gt; push -&gt; site</text>
+  <g font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle">
+    <rect x="40" y="70" width="180" height="80" rx="10" fill="#ddf4ff" stroke="#0969da"/>
+    <text x="130" y="104" fill="#0969da">1. Write</text>
+    <text x="130" y="126" fill="#0969da" font-weight="normal" font-size="13">_posts/*.md</text>
+    <rect x="270" y="70" width="180" height="80" rx="10" fill="#fff8c5" stroke="#9a6700"/>
+    <text x="360" y="104" fill="#9a6700">2. Push</text>
+    <text x="360" y="126" fill="#9a6700" font-weight="normal" font-size="13">git push</text>
+    <rect x="500" y="70" width="180" height="80" rx="10" fill="#dafbe1" stroke="#1a7f37"/>
+    <text x="590" y="104" fill="#1a7f37">3. Published</text>
+    <text x="590" y="126" fill="#1a7f37" font-weight="normal" font-size="13">Pages rebuild</text>
+  </g>
+  <g stroke="#656d76" stroke-width="2" marker-end="url(#arrow)">
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+        <path d="M0,0 L8,3 L0,6" fill="none" stroke="#656d76" stroke-width="1.5"/>
+      </marker>
+    </defs>
+    <line x1="220" y1="110" x2="266" y2="110"/>
+    <line x1="450" y1="110" x2="496" y2="110"/>
+  </g>
+  <text x="360" y="190" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#57606a">Sample image served from /assets/images/ — replace with your own screenshots or diagrams.</text>
+</svg>
