@@ -1,0 +1,17 @@
+title: pork-ops
+description: Notes on ops, automation, and things I'm learning.
+url: "https://pork-ops.github.io"
+baseurl: ""
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+show_excerpts: true
+
+# Minima settings (defaults are fine, made explicit for clarity)
+minima:
+  skin: auto
+  social_links:
+    github: pork-ops
