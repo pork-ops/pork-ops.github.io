@@ -55,3 +55,5 @@ Copy-paste any of these into a post:
 <div class="notice notice--danger" markdown="1">
 **Danger:** this is a danger panel — good for destructive commands and irreversible steps.
 </div>
+
+You can publish posts from the GitHub app! 
