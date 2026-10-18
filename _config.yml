@@ -9,6 +9,10 @@ plugins:
   - jekyll-seo-tag
 
 show_excerpts: true
+default_lang: en
+languages:
+  - en
+  - es
 
 # Minima settings (defaults are fine, made explicit for clarity)
 minima:

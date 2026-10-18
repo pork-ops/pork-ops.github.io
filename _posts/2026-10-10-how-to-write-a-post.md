@@ -3,6 +3,7 @@ layout: post
 title: "How to write a post"
 date: 2026-10-10 10:00:00 +0200
 categories: guide
+lang: en
 ---
 
 Publishing here takes about a minute:

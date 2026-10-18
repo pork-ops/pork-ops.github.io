@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<section class="hero">
+  <p class="eyebrow">pork-ops · notes & experiments</p>
+  <h1><span data-lang="en">Practical notes for curious builders.</span><span data-lang="es">Notas prácticas para gente curiosa.</span></h1>
+  <p class="hero__intro"><span data-lang="en">A small bilingual blog about operations, automation, and whatever I’m learning next.</span><span data-lang="es">Un pequeño blog bilingüe sobre operaciones, automatización y todo lo que estoy aprendiendo.</span></p>
+</section>
+
+<section class="post-list" aria-labelledby="latest-heading">
+  <div class="section-heading">
+    <h2 id="latest-heading"><span data-lang="en">Latest notes</span><span data-lang="es">Notas recientes</span></h2>
+    <span class="language-hint"><span data-lang="en">Showing English</span><span data-lang="es">Mostrando español</span></span>
+  </div>
+  {% for post in site.posts %}
+    <article class="post-card" data-post-language="{{ post.lang }}">
+      <p class="post-card__meta">{{ post.date | date: "%d %b %Y" }} · {{ post.categories | join: " / " }}</p>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      {% if post.translation_url %}<a class="translation-link" data-switch-language="{% if post.lang == 'en' %}es{% else %}en{% endif %}" href="{{ post.translation_url | relative_url }}"><span data-lang="en">Leer en español →</span><span data-lang="es">Leer en inglés →</span></a>{% endif %}
+    </article>
+  {% endfor %}
+</section>

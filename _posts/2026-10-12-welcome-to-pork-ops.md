@@ -3,6 +3,8 @@ layout: post
 title: "Welcome to pork-ops"
 date: 2026-10-12 10:00:00 +0200
 categories: meta
+lang: en
+translation_url: /2026/10/12/welcome-to-pork-ops-es/
 ---
 
 This is a sample post to show how the blog looks.

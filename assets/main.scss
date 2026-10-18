@@ -3,6 +3,37 @@
 
 @import "minima";
 
+:root { --ink: #18221f; --muted: #6b7772; --line: #dce5df; --accent: #1b765d; --soft: #edf5f0; }
+* { box-sizing: border-box; }
+body { color: var(--ink); background: #fbfcfb; }
+.wrapper { max-width: 920px; }
+.site-header { border-top: 4px solid var(--accent); border-bottom: 1px solid var(--line); }
+.site-header__inner { display: flex; align-items: center; justify-content: space-between; min-height: 72px; }
+.site-title { font-weight: 800; letter-spacing: -.04em; color: var(--ink); }
+.site-nav { display: flex; align-items: center; gap: 20px; font-size: .95rem; }
+.site-nav a { color: var(--ink); }
+.language-switcher { display: flex; align-items: center; gap: 5px; font-size: .8rem; }
+.language-switcher button { border: 0; background: transparent; color: var(--muted); cursor: pointer; font: inherit; padding: 3px; }
+.language-switcher button.is-active { color: var(--accent); font-weight: 800; }
+.hero { padding: 84px 0 64px; max-width: 700px; }
+.eyebrow, .post-card__meta, .language-hint { color: var(--accent); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.hero h1 { font-size: clamp(2.3rem, 6vw, 4.5rem); letter-spacing: -.06em; line-height: 1.03; margin: 16px 0 22px; }
+.hero__intro { color: var(--muted); font-size: 1.25rem; line-height: 1.6; max-width: 610px; }
+.section-heading { align-items: baseline; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; margin-bottom: 8px; }
+.section-heading h2 { font-size: 1.45rem; }
+.post-card { border-bottom: 1px solid var(--line); padding: 27px 0 30px; }
+.post-card h3 { font-size: 1.55rem; margin: 8px 0; }
+.post-card p:not(.post-card__meta) { color: var(--muted); margin-bottom: 12px; }
+.translation-link { color: var(--accent); font-size: .92rem; font-weight: 700; }
+.post { margin: 70px auto; max-width: 720px; }
+.post-header { border-bottom: 1px solid var(--line); margin-bottom: 36px; padding-bottom: 25px; }
+.post-title { letter-spacing: -.04em; }
+.post-content { font-size: 1.08rem; line-height: 1.75; }
+.post-content h2 { margin-top: 2em; }
+.site-footer { border-top: 1px solid var(--line); color: var(--muted); margin-top: 80px; padding: 30px 0; font-size: .9rem; }
+[data-lang][hidden] { display: none !important; }
+@media (max-width: 600px) { .site-header__inner { align-items: flex-start; flex-direction: column; gap: 10px; padding-bottom: 16px; padding-top: 16px; } .hero { padding: 55px 0 40px; } .section-heading { align-items: flex-start; flex-direction: column; } }
+
 /* pork-ops callout panels (Confluence-style info/warning boxes).
    Usage in any post or page:
    <div class="notice notice--info" markdown="1">**Info:** text</div>
