@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Welcome to pork-ops"
-date: 2026-10-12 10:00:00 +0200
-categories: meta
+title: "Docker bake"
+date: 2026-10-19 10:00:00 +0200
+categories: docker
 lang: en
 permalink: /2026/10/19/welcome-to-pork-ops/
 ---
