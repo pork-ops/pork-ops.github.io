@@ -2,7 +2,7 @@
 layout: post
 title: "Machine learning: components"
 date: 2026-10-24 10:00:00 +0200
-categories: go
+categories: ml
 lang: en
 permalink: /2026/10/24/components-ml/
 ---
