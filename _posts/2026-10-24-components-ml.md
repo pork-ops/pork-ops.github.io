@@ -39,7 +39,7 @@ Example: L=(1/3) * (m+b-3)^2+(2m+b-5)^2+(3m+b-7)^2 (notice this is just the MSE 
 Now we need to minimize the loss. How? Easy! We take the loss function and our model and we calculate the derivative, which allows us to work towards finding the way to get the minimun (this is why we look for specific loss functions where this process is easy to perform). Notice we are minimizing the loss of our model. 
 
 In our example the derivatives would be:
-![Exmple derivatives for our loss function](/assets/images/deploy-flow.svg)
+![Exmple derivatives for our loss function](/assets/images/gradients.png)
 
 Now we simply input the train data and we average the values, we should end up with a vector with the form (parameter_1_gradient, parameter_2_gradient). This is how we would change the parameters of our model to make the loss function smaller. 
 
